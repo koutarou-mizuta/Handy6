@@ -11,7 +11,7 @@ namespace Handy6
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new JobMenu();
         }
 
         protected override void OnStart()

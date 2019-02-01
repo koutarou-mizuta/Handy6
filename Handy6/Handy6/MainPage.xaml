@@ -1,14 +1,58 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Handy6"
              x:Class="Handy6.MainPage">
+        
+    <Grid RowSpacing="1">
+        <Grid.Resources>
+            <ResourceDictionary>
 
+                <Style TargetType="Button">
+                    <Setter Property="BackgroundColor" Value="Maroon"/>
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="FontSize" Value="Large"/>
+                    <Setter Property="BorderRadius" Value="0"/>
+                </Style>
+
+            </ResourceDictionary>
+        </Grid.Resources>
+       <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+       </Grid.RowDefinitions> 
+       
+        
+ 
+       <Label Text="Mateハンディー" Grid.Row="0" TextColor="White"
+              BackgroundColor="Navy" HorizontalTextAlignment="Center"
+              FontSize="Large" VerticalTextAlignment="Center"/>
+     
+        
+       <Button Text="収集" Grid.Row="1" TextColor="White"/>
+            
+       <Button Text="転送" Grid.Row="2" />
+
+       <Button Text="削除" Grid.Row="3" />
+
+       <Button Text="設定" Grid.Row="4" />
+     
+        
+        
+        
+       <Label Text="発注" Grid.Row="5" TextColor="Black"
+              HorizontalTextAlignment="Center"
+              FontSize="Large" VerticalTextAlignment="Center"/>
+    </Grid>
+    
+    
+    
+<!--
     <StackLayout>
-        <!-- Place new controls here -->
+     
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>
-
+-->
 </ContentPage>

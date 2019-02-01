@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Handy6.JobMenu">
+    <ContentPage.Content>
+        
+    <StackLayout>
+        <StackLayout BackgroundColor="Navy" HeightRequest="30">
+            <Label Text="操作メニュー" FontSize="Large"
+                TextColor="White" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+
+        <Grid RowSpacing="8" ColumnSpacing="8" Padding="8" VerticalOptions="FillAndExpand">
+            <Grid.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Button">
+                        <Setter Property="BackgroundColor" Value="CornflowerBlue"/>
+                        <Setter Property="TextColor" Value="White"/>
+                        <Setter Property="FontSize" Value="Large"/>
+                        <Setter Property="BorderRadius" Value="8"/>
+                    </Style>
+                </ResourceDictionary>
+            </Grid.Resources>
+                
+<!--
+           <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+           </Grid.RowDefinitions> 
+           
+           <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>    
+                <ColumnDefinition Width="*"/>                    
+           </Grid.ColumnDefinitions>
+-->                
+           <Button Text="発註" Grid.Row="0" Grid.Column="0" />
+           <Button Text="仕入" Grid.Row="1" Grid.Column="0" />
+           <Button Text="棚卸" Grid.Row="2" Grid.Column="0" />
+           <Button Text="売価変更" Grid.Row="3" Grid.Column="0" />
+            <Button Text="発註" Grid.Row="0" Grid.Column="1" />
+           <Button Text="仕入" Grid.Row="1" Grid.Column="1" />
+           <Button Text="棚卸" Grid.Row="2" Grid.Column="1" />
+           <Button Text="売価変更" Grid.Row="3" Grid.Column="1" />
+
+        </Grid>
+              
+    </StackLayout>
+         
+        
+        
+        
+    </ContentPage.Content>
+</ContentPage>
